@@ -24,7 +24,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 250px;
   height: 100%;
   z-index: 10;
   background-color: #bebebe; /*dim the background*/
@@ -187,7 +187,7 @@
   margin-top: 50px;
 }
 .division-list{
-  padding: 0 0 5px 20px;
+  padding: 0 5px 5px 5px;
 }
 .division-list:hover{
   background-color:white;
