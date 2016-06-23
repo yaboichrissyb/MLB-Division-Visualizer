@@ -40,6 +40,8 @@ configure do
   set :views, File.join(Sinatra::Application.root, "app", "views")
 end
 
+config.serve_static_assets = true
+config.assets.compile = true
 
 # Set up the controllers and helpers
 Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.2.1'
 
 # PostgreSQL driver
 gem 'pg'
@@ -18,7 +18,8 @@ gem 'faker'
 gem 'rake'
 gem 'bcrypt'
 gem "sinatra-cross_origin", "~> 0.3.1"
-
+gem 'rails_stdout_logging'
+gem 'rails_serve_static_assets'
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
