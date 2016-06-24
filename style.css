@@ -1,42 +1,88 @@
-/*html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}*/
+html,body{
+  margin:0px;
+}
+
+
 #map-container{
-  margin:0 auto 0 0;
+  display:inline-block;
+  float:left;
+  clear:both;
+  position:relative;
+  /*background-image:url('../images/Blank_US_map_48states.svg')*/
 }
 
 #map{
-  margin: 120px 0 0 60px;
-  position:relative;
+  position:absolute;
+  margin: 70px 0 0 0px;
   height:640px;
 }
+.project-content{
+  height:800px;
+  width:100%;
+}
 
+
+#text-info{
+  margin:0;
+  display:inline-block;
+  float:right;
+  width: 250px;
+  background-color: #d3d3d3;
+  height: 100%;
+}
+#shown-info{
+  margin:0;
+  height:100%;
+}
+.league{
+  display:inline-block;
+  width:40%;
+  text-align: center;
+  margin-left: 6%;
+  margin-top: 5%;
+   height:40px;
+  padding:8px 0 5px 0;
+  background-color:grey;
+  border-radius: 5px;
+  color:black;
+}
+
+#division-lists-container{
+  position:absolute;
+  bottom:18px;
+  display:none;
+}
+#team-name{
+  height:30px;
+  margin:10px 0 20px 0;
+}
+#shown-info h5{
+  margin-left: 20px;
+}
+
+.division-list{
+  padding: 5px 5px 5px 5px;
+}
+
+.division-list:hover{
+  background-color:white;
+  border-right: 4px solid black;
+
+}
 .team{
   position:absolute;
   height:30px;
-  padding-top:50px;
-  margin-top: 50px;
-  margin-left:50px;
+  width:auto;
+  margin:40px 0px 0px -10px;
+  /*padding-top:50px;*/
+  /*margin-top: 50px;*/
+  /*margin-left:50px;*/
 }
-#shown-info{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 250px;
-  height: 100%;
-  z-index: 10;
-  background-color: #bebebe; /*dim the background*/
-
-}
-
 #new-york-yankees{
   left:910px;
   top:215px;
 }
 #houston-astros{
-  display:inline;
   left:455px;
   top:560px;
 }
@@ -154,44 +200,7 @@
   left:640px;
   top:245px;
 }
-.league{
-  display:inline-block;
-  width:40%;
-  text-align: center;
-  margin-left: 5%;
-  margin-top: 5%;
-   height:20px;
-  border:2px solid black;
-  padding:5px 0 5px 0;
-  background-color:white;
-  border-radius: 5px;
-}
 
-.league:hover{
-  background-color:grey;
-}
-.league:active{
-  color:white;
-}
-#division-lists-container{
-  display:none;
-}
-#team-name{
-  height:30px;
-  margin-bottom: 20px;
-}
-#shown-info h3{
-  margin-left: 20px;
-}
-#text-info{
-  margin-top: 50px;
-}
-.division-list{
-  padding: 0 5px 5px 5px;
-}
-.division-list:hover{
-  background-color:white;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
-}
+
+
 

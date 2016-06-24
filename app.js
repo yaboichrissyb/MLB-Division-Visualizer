@@ -48,7 +48,16 @@ $( document ).ready(function(){
       console.log(teamId);
       $("#"+teamId).animate({height: '50px', opacity: 1.0, zIndex: 10},300)
     }
-
+  });
+  $(".league").click(function(){
+    var buttonID = this.id;
+    if(buttonID === "american-button"){
+      $("#american-button").css("color", "white");
+      $("#national-button").css("color", "black");
+    } else {
+      $("#national-button").css("color", "white");
+      $("#american-button").css("color", "black");
+    }
   });
 
 
